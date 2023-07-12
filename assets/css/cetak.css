@@ -1,0 +1,22 @@
+.kopsurat {
+	position: relative;
+	width: 400px;
+	height: 200px;
+	border: 3px solid red;
+}
+
+.kopsurat .logo {
+	position: absolute;
+	left: auto;
+	width: 100px;
+	height: 120px;
+	border: 3px solid blue;
+}
+
+.kopsurat .teks {
+	position: absolute;
+	left: 150px;
+	width: 200px;
+	height: 120px;
+	border: 3px solid green;
+}
