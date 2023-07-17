@@ -14,13 +14,9 @@ class Laporan extends CI_Controller
      * @param none
      * @return void
      **/
-    function penerima_bantuan()
+    function index()
     {
-        $pdf = new FPDF();
-        $pdf->AddPage();
-        $pdf->SetFont('Arial', 'B', 16);
-        $pdf->Cell(40, 10, 'Hello World!');
-        $pdf->Output();
+        $this->load->model('mlaporan');
+        $this->load->view('vjpdetail');
     }
 }
-
