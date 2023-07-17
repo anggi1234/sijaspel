@@ -43,7 +43,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
     <div class="form-signin container sd-flex justify-content-center align-item-center">
-        <form>
+        <form action="<?= base_url(); ?>login/proses" method="post">
             <img class="mb-4" src="<?= base_url(); ?>/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
@@ -62,7 +62,7 @@
                 </label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; <?= date("Y");?></p>
+            <p class="mt-5 mb-3 text-muted">&copy; <?= date("Y"); ?></p>
         </form>
     </div>
 
