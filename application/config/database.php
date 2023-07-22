@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -75,10 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'DELTA-ONE\SQLEXPRESS',
+	'hostname' => '192.168.1.3\SQLEXPRESS',
+	// 'hostname' => 'DELTA-ONE\SQLEXPRESS',
 	// 'hostname' => 'LAPTOP-7E12AGTT',
 	'username' => 'sa',
-	'password' => 'Sapidelman123',
+	'password' => '@dm1nr5pn',
 	'database' => 'DBPN',
 	'dbdriver' => 'sqlsrv',
 	'dbprefix' => '',
@@ -98,8 +99,8 @@ $db['default'] = array(
 
 $db['serverlama'] = array(
 	'dsn'	=> '',
-	//  'hostname' => '192.168.1.3',
-	'hostname' => 'localhost:3306',
+	'hostname' => '192.168.1.3',
+	// 'hostname' => 'localhost:3306',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'dbsimrsrsbdpbg',
@@ -121,8 +122,8 @@ $db['serverlama'] = array(
 
 $db['antrian'] = array(
 	'dsn'	=> '',
-	//  'hostname' => '192.168.1.250',
-	'hostname' => 'localhost:3306',
+	'hostname' => '192.168.1.250',
+	// 'hostname' => 'localhost:3306',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'dbantrianrsbdpbg',

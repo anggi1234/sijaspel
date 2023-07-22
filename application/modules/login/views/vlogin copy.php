@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="<?= base_url(); ?>/assets/dist/css/signin.css" rel="stylesheet">
@@ -29,14 +29,9 @@
     </style>
 
     <title>Login SiJaspel</title>
-    <link rel="icon" href="<?= base_url(); ?>/assets/brand/favicon.png">
-
 </head>
 
-
 <body class="text-center">
-
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -47,17 +42,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
-    <div class="form-signin container-fluid sd-flex justify-content-center align-item-center">
+    <div class="form-signin container sd-flex justify-content-center align-item-center">
         <form action="<?= base_url(); ?>login/proses" method="post">
-            <img class="mb-4" src="<?= base_url(); ?>/assets/brand/pn.svg" alt="" width="72" height="57">
+            <img class="mb-4" src="<?= base_url(); ?>/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="form-floating">
-                <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Username">
-                <label for="floatingInput">Username</label>
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
 
@@ -66,9 +61,8 @@
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <?= $this->session->flashdata('error') ? $this->session->flashdata('error') : ''; ?>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">RSUD Panti Nugoroho &copy; <?= date('Y'); ?></p>
+            <p class="mt-5 mb-3 text-muted">&copy; <?= date('Y'); ?></p>
         </form>
 
     </div>

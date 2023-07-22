@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Mlaporan extends CI_Model
+class Mhome extends CI_Model
 {
     public function getRekap($tgl1, $tgl2)
     {
