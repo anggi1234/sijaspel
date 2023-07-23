@@ -1,31 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title><?php echo config_item('web_title'); ?></title>
-		<link href='<?php echo config_item('img'); ?>favicon.png' type='image/x-icon' rel='shortcut icon'>
-		<link href="<?php echo config_item('bootstrap'); ?>css/bootstrap.min.css" rel="stylesheet">
-		<link href="<?php echo config_item('bootstrap'); ?>css/bootstrap-theme.min.css" rel="stylesheet">
-		<link href="<?php echo config_item('font_awesome'); ?>css/font-awesome.min.css" rel="stylesheet">
-		<link href="<?php echo config_item('css'); ?>style-gue.css" rel="stylesheet">
-		<script src="<?php echo config_item('js'); ?>jquery.min.js"></script>
-		<script>
-		var habiscuy;
-		$(document).on({
-			ajaxStart: function() { 
-				habiscuy = setTimeout(function(){
-					$("#LoadingDulu").html("<div id='LoadingContent'><i class='fa fa-spinner fa-spin'></i> Mohon tunggu ....</div>");
-					$("#LoadingDulu").show();
-				}, 500);
-			},
-			ajaxStop: function() { 
-				clearTimeout(habiscuy);
-				$("#LoadingDulu").hide(); 
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="<?= base_url(); ?>/assets/brand/favicon.png">
+	<title>Dashboard</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+
+
+	<!-- Bootstrap core CSS -->
+	<link href="<?= base_url(); ?>assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
 			}
-		});
-		</script>
-	</head>
-	<body>
-		<div id='LoadingDulu'></div>
+		}
+	</style>
+
+
+	<!-- Custom styles for this template -->
+	<link href="<?= base_url(); ?>assets/dist/css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
